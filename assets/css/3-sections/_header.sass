@@ -1,0 +1,20 @@
+header
+  @extend %background-image
+  background: url(../img/#{$hero-path})
+  background-repeat: no-repeat
+  padding-bottom: 150px
+  height: 400px
+
+  .kicker
+    @extend %small-bold
+    text-align: center
+    letter-spacing: 0.05em
+    color: white
+    line-height: 1
+@media (max-width: 640px)
+  header
+    background:
+      position: 50% 20px, 50% 50%
+
+    h1
+      padding-top: 0px
