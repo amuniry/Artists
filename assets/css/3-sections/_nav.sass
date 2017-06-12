@@ -1,18 +1,20 @@
+html,body
+  font-family: 'Catamaran', sans-serif
+  font-weight: 100
+  font-size: 10px
+
 .navigation
   background: white
   height: 90px
   z-index: -1
 
   .logo
-    @extend %background-image
-    background:
-      position: 5px 10px, 10% 90%
-      image: url(../img/#{$logo-path})
-    +size(120px)
+    background: url(../img/#{$logo-path})
+    background-repeat: no-repeat
+    +size(160px)
+    height: 50px
     float: left
-    margin: 10px 0 0 30px
-    #logo_fill
-      fill: red
+    margin: 10px 0 0 0px
 nav
   float: right
   padding: 30px 30px 0 0
@@ -21,14 +23,23 @@ nav
     display: inline-block
     margin-left: 20px
     z-index: 2
-    color: rgba(0,0,0,0.8)
+    color: $orange
     @extend %small-bold
-
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: 100%
+      left: 0
+      background: $orange
+      height: 2px
+      width: 100%
+      transform: scale(0)
+      transition: 1s ease all
     &:hover
-      color: rgba(0,0,0,1)
-
-
-
+      color: $text
+      &::after
+        transform: scale(1)
 @media (max-width: 640px)
   nav
     float: none

@@ -2,7 +2,9 @@
 # General Site Settings
 
 title: Portfolio Theme
-description: Thinker // Designer // YouTuber
+post1: Frontender
+post2: Graphic'er
+post3: Thinker
 email: devtipsfordesigners@gmail.com
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
@@ -39,11 +41,21 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Travis specializes in making things** for human people.
-  Most of the things he makes are [digital interfaces](http://travisneilson.com){:target="_blank"},
+  **Munir Younosi is the hard working guy who works around the clock .
+  Most of the things he makes are [digital interfaces, programmed in WordPress, PHP, SASS and SCSS ](http://multimunir.com){:target="_blank"},
   but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson){:target="_blank"}
   and [YouTube videos](http://youtube.com/user/devtipsfordesigners){:target="_blank"} about making codes happen.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+# Icons and the short text add it here
 
+short-desc1: Logo design
+short-desc2: liquid design
+short-desc3: Programming
+short-desc4: Video Editing
+
+# skill section
 
 skills:
 - {name: Communication, value: '2'}

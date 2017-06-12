@@ -1,9 +1,10 @@
-<div class="navigation">
-  <div class="logo"><span>The jekyll theme</span></div>
-    <nav>
-      {% for item in site.data.settings.menu %}
-        <a href="{{ item.url }}">{{ item.name }}</a>
-      {% endfor %}
-    </nav>
-
+<div class="container">
+  <div class="navigation">
+    <div class="logo"></div>
+      <nav>
+        {% for item in site.data.settings.menu %}
+          <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+  </div>
 </div>

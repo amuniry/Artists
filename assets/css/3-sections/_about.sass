@@ -1,17 +1,54 @@
-.face-lockup
-  max-width: 780px
+section
+  position: relative
+.about-me
+  font-size: 260px
+  line-height: 200px
+  color: $documentBackgroundColor !important
+  position: absolute
+  font-weight: 900
+  top: 0
+  left: 0%
+  transform: translate(-10%, 110%) rotate(90deg)
+  z-index: 0
+  text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.04)
+  animation: swing1 3s ease all
+  animation-iteration-count: 2
+
+@keyframes swing1
+  15%
+    transform: translateX(50px)
+  30%
+    transform: translateX(40px)
+  50%
+    transform: translateX(35px)
+  65%
+    transform: translateX(10px)
+  80%
+    transform: translateX(10px)
+  100%
+    transform: translateX(10px)
+.face-me
   +display(flex)
   margin: 0 auto
   +align-items(center)
   +justify-content(space-between)
-
+  .icon
+    border: 1px solid rgba($orange, 0.08)
+    padding: 8px 10px
+    margin: 0px
+    text-align: center
+    text-transform: uppercase
+    font-weight: 300
+    border-radius: 10px
+    font-size: 12px
+    background: $documentBackgroundColor
   .face-img
     border-radius: 50%
     background-size: cover
     background-position: center
     background-image: url(../img/#{$avatar-path})
     +size(200px)
-    +order(3)
+
 
   [class^="icon-"]
     +size(100px)
@@ -31,7 +68,7 @@
       +order(5)
 
 @media screen and (max-width: 650px)
-  .face-lockup
+  .face-me
     display: block
     text-align: center
 
@@ -52,25 +89,22 @@
 
 
 .blurb
-  max-width: 620px
-  padding: 0 20px
+  padding: 70px 50px
   margin: 50px auto
-  font-size: 24px
-  text-align: center
-  font-weight: 300
+  font-size: 16px
+  font-weight: 100
+  background: $documentBackgroundColor
+  border-radius: 10px
 
 
 
 .skill-lockup
-  max-width: 540px
-  margin: 100px auto
-  color: #999
-  +clearfix
+  margin: 30px 0px 50px 10px
+  color: $textColor
 
 
   .skill-unit
     width: 270px
-    float: left
 
   .skill-icons
     font-size: 0
@@ -87,7 +121,7 @@
         content: ''
         display: block
         +size(10px)
-        background: #fff
+        background: lighten($text, 70%)
         border-radius: 50%
         margin: 2px
 
@@ -97,7 +131,7 @@
 
 
 %skill-color
-  background: $bgcolor
+  background: lighten($text, 90%)
 
 
 

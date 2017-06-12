@@ -1,16 +1,164 @@
 header
-  @extend %background-image
   background: url(../img/#{$hero-path})
   background-repeat: no-repeat
-  padding-bottom: 150px
-  height: 400px
+  overflow: hidden
+  .overlay
+    background: rgba($orange, 0.79)
+    height: 600px
+    .video-container
+      .intro-text
+        .typed-cursor
+          display: none
+        .bullets
+          color: white
+          max-width: 20px
+          max-height: 20px
+        .intro-typingtext
+          color: #fff
+          text-transform: uppercase
+          font-size: 90px !important
+          font-weight: 900
+          position: absolute
+          top: 100%
+          left: 50%
+          width: 100%
+          display: block
+          transform: translate(-50%, 100%)
+          text-align: center
+          letter-spacing: 1px
+          margin: 20px 0px
+          padding: 40px 0px
 
-  .kicker
-    @extend %small-bold
-    text-align: center
-    letter-spacing: 0.05em
-    color: white
-    line-height: 1
+        .posts
+          text-align: center
+          display: block
+          width: 100%
+          text-transform: uppercase
+          letter-spacing: 0.1px
+          color: white
+          line-height: 1
+          font-weight: 900
+          position: relative
+          font-size: 2rem
+          .post1
+            position: absolute
+            transform: translate(0%, 600%)
+            transform-origin: bottom center
+            animation: swing1 8s cubic-bezier(0.22,-0.04, 0.44, 0.57)
+            animation-iteration-count: 2
+            &:before
+              content: ''
+              position: absolute
+              bottom: 70%
+              left: 50%
+              background: rgba(white, 0.5)
+              width: 1px
+              height: 400px
+            &::after
+              content: ''
+              position: absolute
+              top: 80%
+              left: 3%
+              width: 120px
+              height: 2px
+              margin: 2px
+              background: white
+
+          .post2
+            position: absolute
+            transform: translate(200%, 580%)
+            transform-origin: top
+            animation: swing2 7s cubic-bezier(0.22,-0.04, 0.44, 0.57)
+            animation-iteration-count: 2
+            &:before
+              content: ''
+              position: absolute
+              bottom: 70%
+              left: 50%
+              background:  rgba(white, 0.5)
+              width: 1px
+              height: 400px
+            &::after
+              content: ''
+              position: absolute
+              top: 80%
+              left: 3%
+              width: 110px
+              height: 2px
+              margin: 2px
+              background: white
+
+          .post3
+            position: absolute
+            transform-origin: top
+            transform: translate(300%, 650%)
+            animation: swing3 9s cubic-bezier(0.22,-0.04, 0.44, 0.57)
+            animation-iteration-count: 2
+            left: 0%
+            &:before
+              content: ''
+              position: absolute
+              bottom: 70%
+              left: 50%
+              background: rgba(white, 0.5)
+              width: 1px
+              height: 400px
+            &::after
+              content: ''
+              position: absolute
+              top: 80%
+              left: 0%
+              width: 90px
+              height: 2px
+              margin: 2px
+              background: white
+
+@keyframes swing1
+  15%
+    transform: translateY(-100px)
+  30%
+    transform: translateY(70px)
+  50%
+    transform: translateY(-75px)
+  65%
+    transform: translateY(95px)
+  80%
+    transform: translateY(-100px)
+  100%
+    transform: translateY(100px)
+
+@keyframes swing2
+  15%
+    transform: translate(200%, 130%) translateY(-100px)
+  30%
+    transform: translate(200%, 130%) translateY(70px)
+  50%
+    transform: translate(200%, 130%) translateY(-75px)
+  65%
+    transform: translate(200%, 130%) translateY(95px)
+  80%
+    transform: translate(200%, 130%) translateY(-100px)
+  100%
+    transform: translate(200%, 130%) translateY(100px)
+
+@keyframes swing3
+  15%
+    transform: translate(300%, 130%) translateY(-150px)
+  30%
+    transform: translate(300%, 130%) translateY(100px)
+  50%
+    transform: translate(300%, 130%) translateY(-75px)
+  65%
+    transform: translate(300%, 130%) translateY(95px)
+  80%
+    transform: translate(300%, 130%) translateY(-140px)
+  100%
+    transform: translate(300%, 130%) translateY(150px)
+
+
+
+
+
 @media (max-width: 640px)
   header
     background:

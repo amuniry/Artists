@@ -1,42 +1,53 @@
 <section>
 
-  <h3 id="about-me">About Myself</h3>
+  <h3 id="about-me">About</h3>
+  <h3 class='about-me'>About</h3>
 
-  <div class="face-lockup">
+  <div class="container face-me">
 
-    <div class="face-img"></div>
+    <div class="two columns icon">
+      <span class="icon-pencil">{% include icons/icon-pencil.html %}</span>
+      <span class="short-desc1">{{ site.data.settings.short-desc1 }}</span>
+    </div>
+    <div class="two columns icon">
+      <span class="icon-mouse">{% include icons/icon-mouse.html %}</span>
+      <span class="short-desc2">{{ site.data.settings.short-desc2 }}</span>
+    </div>
+    <div class="four columns face-img"></div>
+    <div class="two columns icon">
+      <span class="icon-browser">{% include icons/icon-browser.html %}</span>
+      <span class="short-desc3">{{ site.data.settings.short-desc3 }}</span>
+    </div>
+    <div class="two columns icon">
+      <span class="icon-video">{% include icons/icon-video.html %}</span>
+      <span class="short-desc4">{{ site.data.settings.short-desc4 }}</span>
+    </div>
+    </div>
 
-    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
-    <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
-    <div class="icon-browser">{% include icons/icon-browser.html %}</div>
-    <div class="icon-video">{% include icons/icon-video.html %}</div>
+    <div class="container">
+    <div class="six columns blurb">
+      {{ site.data.settings.blurb | markdownify }}
+    </div>
 
-  </div>
+    {% if site.data.settings.skills %}
 
+    <div class="six columns skill-lockup">
 
-  <div class="blurb">
-    {{ site.data.settings.blurb | markdownify }}
-  </div>
+      {% for skill in site.data.settings.skills %}
 
-  {% if site.data.settings.skills %}
-
-  <div class="skill-lockup">
-
-    {% for skill in site.data.settings.skills %}
-
-      <div class="skill-unit">
-        <div class="skill-label">{{ skill.name }}</div>
-        <div class="skill-icons skill-{{ skill.value }}">
-          {% for i in (1..10) %}
-            <span></span>
-          {% endfor %}
+        <div class="skill-unit">
+          <div class="skill-label">{{ skill.name }}</div>
+          <div class="skill-icons skill-{{ skill.value }}">
+            {% for i in (1..10) %}
+              <span></span>
+            {% endfor %}
+          </div>
         </div>
-      </div>
 
-    {% endfor %}
+      {% endfor %}
 
+    </div>
+
+    {% endif %}
   </div>
-
-  {% endif %}
-
 </section>
