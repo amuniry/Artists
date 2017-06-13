@@ -1,11 +1,12 @@
 html,body
   font-family: 'Catamaran', sans-serif
   font-weight: 100
+  margin: 0px
+  padding: 0px
   font-size: 10px
 
 .navigation
-  background: white
-  height: 90px
+  background: transparent
   z-index: -1
 
   .logo
@@ -23,15 +24,16 @@ nav
     display: inline-block
     margin-left: 20px
     z-index: 2
-    color: $orange
+    color: white
     @extend %small-bold
     position: relative
+    transition: 1s ease all
     &::after
       content: ''
       position: absolute
       top: 100%
       left: 0
-      background: $orange
+      background: $bgcolor
       height: 2px
       width: 100%
       transform: scale(0)

@@ -1,14 +1,23 @@
     <!-- Header -->
 <header id='header'>
   <div class="overlay">
+    <div class="container">
+      <!--navigation html   -->
+      <div class="navigation">
+        <div class="logo"></div>
+          <nav>
+            {% for item in site.data.settings.menu %}
+              <a href="{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+          </nav>
+      </div>
+    </div>
     <div class="video-container">
       <video poster="" id="bgvid" playsinline autoplay muted loop>
         <source src="assets/img/typing.mov" type="video/webm">
         <source src="assets/img/typing.mov" type="video/mp4">
     </video>
-
         <div class="container">
-
                 <div class="intro-text">
                   <h1 class="intro-typingtext"></span></h1>
                   <div class="posts">
