@@ -1,5 +1,5 @@
 ---
-title: City In Website Concept
+title: My WordPress Portfolio website design
 ---
 
-![City In]({{ site.github.url }}/assets/img/work/proj-2/CityIn-AntonSkvortsov.jpg)
+![WordPress site](/assets/img/work/proj-2/wpportfolio.png)

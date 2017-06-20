@@ -1,5 +1,6 @@
 ---
-title: Crispy Icons
+title: Home decore
 ---
 
-![Crispy Icons]({{ site.github.url }}/assets/img/work/proj-3/CrispyIcons-PetrasNargela.jpg)
+![Home decore](/assets/img/work/proj-3/wphome.png)
+![Home decore](/assets/img/work/proj-3/wphome2.png)

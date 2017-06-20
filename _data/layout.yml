@@ -11,6 +11,7 @@ avatar: "munir.png"
 # Colors
 
 accent: "#ff4f00"
+accent-light: "#fc9b75"
 textColor: "#1E2026"
 headlineColor: "#333"
 bgcolor: "#fcfcf1"

@@ -40,6 +40,7 @@ header
           font-weight: 900
           position: relative
           font-size: 2rem
+
           .post1
             position: absolute
             transform: translate(0%, 600%)
@@ -92,7 +93,7 @@ header
             position: absolute
             transform-origin: top
             transform: translate(300%, 650%)
-            animation: swing3 9s cubic-bezier(0.22,-0.04, 0.44, 0.57)
+            animation: swing3 5s cubic-bezier(0.22,-0.04, 0.44, 0.57)
             animation-iteration-count: 2
             left: 0%
             &:before
@@ -163,6 +164,17 @@ header
   header
     background:
       position: 50% 20px, 50% 50%
-
     h1
       padding-top: 0px
+@media (max-width: 480px)
+  header
+    .overlay
+      .video-container
+        .intro-text
+          .intro-typingtext
+            font-size: 45px !important
+            top: 50%
+            margin: 10px 0px
+            padding: 10px 0px
+          .posts
+            display: none

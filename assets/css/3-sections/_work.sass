@@ -18,7 +18,11 @@
     background: rgba($orange, 0.6)
     width: 200px
     height: 1px
+
+
+
 /* Hackey-type CSS as a jQuery Alternative for when the browser does not have jQuery enabled. */
+
 .noscript
   display: none
 
@@ -83,7 +87,7 @@
       +display(flex)
       background: fade-out($accent, 0.1)
       text-align: center
-      @extend %animationstart_#{$animation}
+      @extend %animationstart_bottomDoor
 
       strong
         display: block
@@ -97,9 +101,8 @@
 
     &:hover
       z-index: 2
-
       .thumb-overlay
-        @extend %#{$animation}
+        @extend %bottomDoor
 
 
 .work-container
@@ -130,18 +133,15 @@
     +position(absolute, -4px null null -60px)
 
     path
-      fill: rgba(0,0,0,0.4)
+      fill: rgba($orange,0.4)
 
     &:hover
       opacity: 1
 
-
-
 @media (max-width: 740px)
-  .work-container
 
+  .work-container
     .work-return
       left: 0px
-
     h4
       margin-left: 60px

@@ -1,5 +1,5 @@
 ---
-title: "Stripes & Co"
+title: "Jekyllportfolio"
 ---
 
-![Stripes & Co]({{ site.github.url }}/assets/img/work/proj-8/stripes-co-NickZoutendijk.jpg)
+![Jekyllportfolio](/assets/img/work/proj-8/Jekyllportfolio.png)

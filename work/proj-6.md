@@ -1,5 +1,5 @@
 ---
-title: Timeline Page
+title: Terminalborsen
 ---
 
-![Timeline Page]({{ site.github.url }}/assets/img/work/proj-6/TimeLinePage-SergeyValiukh.jpg)
+![Terminalborsen](/assets/img/work/proj-6/terminalborsen.png)

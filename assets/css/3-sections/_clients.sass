@@ -1,10 +1,26 @@
+#clients
+  color: $orange
+  font-size: 24px
+  letter-spacing: 2px
+  line-height: 12px
+  font-weight: 900
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    top: 75%
+    left: 0%
+    transform: translate(400%, 100%)
+    background: rgba($orange, 0.6)
+    width: 200px
+    height: 1px
 .section-clients
   position: relative
+  background: $bgcolor
 
 .clients-belt
   width: 100%
   position: relative
-
   .client-unit
     max-width: 750px
     margin: 50px auto
@@ -63,14 +79,18 @@
     padding-bottom: 20px
     border-bottom: 4px solid transparent
     opacity: 0.5
+    -webkit-filter: grayscale(100%)
+    filter: grayscale(100%)
 
     &.active-client
       opacity: 1
       border-bottom: 4px solid $accent
+      -webkit-filter: grayscale(0%)
+      filter: grayscale(0%)
 
 
 .client-quote-mark
-  +position(absolute, -18px null null -15px)
+  +position(absolute, -10px null null -55px)
   +size(60px)
   z-index: -1
   opacity: 0.3
@@ -110,7 +130,7 @@
     display: inline-block
     +size(16px)
     border-radius: 50%
-    border: solid 2px $bgcolor
+    border: solid 2px rgba($text, 0.15)
     margin: 0px 10px
     cursor: pointer
 

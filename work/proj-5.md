@@ -1,5 +1,5 @@
 ---
-title: Fresh It Up
+title: Hypnose Netuka
 ---
 
-![Fresh It Up]({{ site.github.url }}/assets/img/work/proj-5/freshitup-JieyuXiong.jpg)
+![Hypnose Netuka](/assets/img/work/proj-5/hypose.png)
